@@ -2,6 +2,8 @@
 
 This code is a face recognition part of my Sara project
 
+First make a folder named registered and a folder inside with the name pre
+
 Modules:
 1. cv_version: 
 Purpose: Combines face detection, registration, and recognition using OpenCV and face_recognition libraries.
