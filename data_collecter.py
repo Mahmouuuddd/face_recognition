@@ -39,10 +39,10 @@ def face_extractor(frame):
 cap = cv2.VideoCapture(0)
 count = 0
 
-parent_dir = r"C:\Users\Abdullah\Desktop\Treikaaz\registered"
+parent_dir = r"your path to registered folder"
 path_of_newdir = os.path.join(parent_dir, name_of_folder)
 the_final_path = os.mkdir(path_of_newdir)
-the_final_dir = r"C:\Users\Abdullah\Desktop\Treikaaz\registered\{}".format(str(name_of_folder))
+the_final_dir = r"your path to registered folder\{}".format(str(name_of_folder))
 the_final_Dir = os.path.join(the_final_dir, name_of_folder)
 
 # Collect 100 samples of your face from webcam input
@@ -54,10 +54,6 @@ while True:
         face = cv2.resize(face_extractor(frame), (600, 600))
         #face = cv2.cvtColor(face, cv2.COLOR_BGR2GRAY)
 
-        # Save file in specified directory with unique name
-        
-        #arent_dir2 = r"C:\Users\Abdullah\Desktop\FaceRecognition\Datasets\Train" + str(the_final_path)
-        #the_final_path2 = os.path.join(the_final_path, name_of_folder)
         
         file_name_path = the_final_Dir  +" "+str(count) + '.jpg'
         cv2.imwrite(file_name_path, face)
