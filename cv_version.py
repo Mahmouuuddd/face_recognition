@@ -35,10 +35,10 @@ count = 0
 def Make_Folder():
     name_of_folder = input("Enter your Name: ")
     #Enter your path of the computer
-    parent_dir = r"C:\Users\Abdullah\Desktop\Treikaaz\registered"
+    parent_dir = r"your path to registered folder"
     path_of_newdir = os.path.join(parent_dir, name_of_folder)
     the_final_path = os.mkdir(path_of_newdir)
-    the_final_dir = r"C:\Users\Abdullah\Desktop\Treikaaz\registered\{}".format(str(name_of_folder))
+    the_final_dir = r"your path to registered folder\{}".format(str(name_of_folder))
     global the_final_Dir
     the_final_Dir = os.path.join(the_final_dir, name_of_folder)    
     
